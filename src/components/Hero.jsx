@@ -33,31 +33,57 @@
 // export default Hero;
 
 
+// import React from 'react';
+// import Student from '../assets/Student.png';
+// import engineer from '../assets/engineer.png';
+// import supplier from '../assets/supplier.png';
+
+// const Hero = () => {
+//   return (
+//     <div className="bg-hero-pattern bg-cover bg-center h-screen flex items-center justify-center relative ">
+//       <div className="flex">
+//         <h1 className="text-white bg-blue-600 py-2 px-4 rounded-full my-6 hover:bg-blue-700 bg-opacity-50">Explore more</h1>
+//       </div>
+//       <div className="bg-black backdrop-brightness-75 p-5 absolute bottom-0 right-0 py-9 bg-opacity-55 hidden sm:block">
+//         <div className="flex flex-col">
+//           <div className="bg-blue-600 mb-8 flex rounded-lg p-2 bg-opacity-40">
+//             <h2 className="text-white font-semibold">School/Office <br /> items</h2>
+//             <img className="w-32 h-32" src={Student} alt="Student" />
+//           </div>
+//           <div className="bg-yellow-500 mb-8 flex rounded-lg p-2 bg-opacity-50">
+//             <h2 className="text-white font-semibold">Civil Engineering <br /> Service</h2>
+//             <img className="w-32 h-28" src={engineer} alt="Engineer" />
+//           </div>
+//           <div className="bg-blue-600 mb-3 flex rounded-lg p-2 bg-opacity-40">
+//             <h2 className="text-white font-semibold text-center">Food Production <br /> Service</h2>
+//             <img className="w-32 h-28" src={supplier} alt="Supplier" />
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
+
+
 import React from 'react';
-import Student from '../assets/Student.png';
-import engineer from '../assets/engineer.png';
-import supplier from '../assets/supplier.png';
 
 const Hero = () => {
   return (
-    <div className="bg-hero-pattern bg-cover bg-center h-screen flex items-center justify-center relative ">
-      <div className="flex">
-        <h1 className="text-white bg-blue-600 py-2 px-4 rounded-full my-6 hover:bg-blue-700 bg-opacity-50">Explore more</h1>
-      </div>
-      <div className="bg-black backdrop-brightness-75 p-5 absolute bottom-0 right-0 py-9 bg-opacity-55 hidden sm:block">
-        <div className="flex flex-col">
-          <div className="bg-blue-600 mb-8 flex rounded-lg p-2 bg-opacity-40">
-            <h2 className="text-white font-semibold">School/Office <br /> items</h2>
-            <img className="w-32 h-32" src={Student} alt="Student" />
-          </div>
-          <div className="bg-yellow-500 mb-8 flex rounded-lg p-2 bg-opacity-50">
-            <h2 className="text-white font-semibold">Civil Engineering <br /> Service</h2>
-            <img className="w-32 h-28" src={engineer} alt="Engineer" />
-          </div>
-          <div className="bg-blue-600 mb-3 flex rounded-lg p-2 bg-opacity-40">
-            <h2 className="text-white font-semibold text-center">Food Production <br /> Service</h2>
-            <img className="w-32 h-28" src={supplier} alt="Supplier" />
-          </div>
+    <div
+      className="relative w-full h-screen bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/printer.jpg')" }}
+    >
+      <div className="absolute inset-0 bg-blue-950 bg-opacity-50"></div>
+      <div className="relative z-10 flex items-center justify-center h-full text-center text-white">
+        <div>
+          <h1 className="text-xl md:text-5xl font-extrabold shadow-2xl">Welcome to KarKelly ltd</h1>
+          <p className="mt-4 text-xs md:text-lg">
+            We offer the best services in IT, Food Supply, and Construction. <br />
+            "Karkelly Bright Future ahead"
+          </p>
+          
         </div>
       </div>
     </div>
