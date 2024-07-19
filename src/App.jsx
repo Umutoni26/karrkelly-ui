@@ -5,6 +5,7 @@ import Landingpage from "./pages/Landingpage"
 import LoginSignup from "./pages/LoginSignup"
 import Product from "./pages/Product"
 import Cart from "./pages/Cart"
+import CreateAccount from "./components/CreateAccountForm/CreateAccount"
 
 
 
@@ -18,9 +19,10 @@ function App() {
         <Routes>
            
           <Route path='/' element={<Landingpage/>}/>
-          <Route path='product' element={<Product/>}/>
+          <Route path='/product' element={<Product/>}/>
           <Route path='/login' element={<LoginSignup/>}/>
           <Route path='/cart' element={<Cart/>}/>
+          <Route path='/CreateAccount' element={<CreateAccount/>}/> 
         </Routes>
        </Router>
     </>

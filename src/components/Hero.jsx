@@ -1,5 +1,5 @@
 import React from 'react';
-import LazyBackground from './LazyBackground';
+import LazyBackground from '../components/LazyBackground';
 
 const Hero = () => {
   const backgroundImage = "/printer.jpg"; // Define your background image URL
