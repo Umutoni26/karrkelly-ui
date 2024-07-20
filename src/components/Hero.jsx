@@ -68,12 +68,12 @@
 
 
 import React from 'react';
-
+import background from "../assets/printer-background.jpg"
 const Hero = () => {
   return (
     <div
       className="relative w-full h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/printer.jpg')" }}
+      style={{ backgroundImage: `url(${background})` }}
     >
       <div className="absolute inset-0 bg-blue-950 bg-opacity-50"></div>
       <div className="relative z-10 flex items-center justify-center h-full text-center text-white">
